@@ -1,0 +1,42 @@
+/* Container điều hướng */
+#navigation-container {
+  width: 4%; /* Chiều rộng ban đầu của container */
+  transition: width 0.3s ease-in-out; /* Hiệu ứng chuyển đổi chiều rộng trong 0.3 giây */
+  overflow: hidden; /* Ẩn các phần tử vượt ra ngoài khi chuyển đổi */
+}
+
+/* Khi hover vào container điều hướng, chiều rộng sẽ tăng lên */
+#navigation-container:hover {
+  width: 15%; /* Mở rộng chiều rộng của container khi hover */
+}
+
+/* Đặt các tên mục điều hướng ban đầu là ẩn */
+.nav-item-name {
+  display: none; /* Ẩn tên mục điều hướng */
+  transition: opacity 0.2s ease-in-out; /* Hiệu ứng chuyển đổi độ mờ (opacity) trong 0.2 giây */
+}
+
+/* Khi hover vào container điều hướng, tên mục sẽ hiển thị */
+#navigation-container:hover .nav-item-name {
+  display: block; /* Hiển thị tên mục */
+  opacity: 1; /* Đặt độ mờ thành 1 (hoàn toàn rõ ràng) */
+}
+
+/* Ô tìm kiếm ban đầu bị ẩn */
+.search-input {
+  display: none; /* Ẩn ô tìm kiếm */
+  opacity: 0; /* Đặt độ mờ ban đầu là 0 */
+  transition: opacity 0.2s ease-in-out; /* Hiệu ứng chuyển đổi độ mờ trong 0.2 giây */
+}
+
+/* Khi hover vào container điều hướng, ô tìm kiếm sẽ hiển thị */
+#navigation-container:hover .search-input {
+  display: block; /* Hiển thị ô tìm kiếm */
+  opacity: 1; /* Đặt độ mờ thành 1 (hoàn toàn rõ ràng) */
+}
+
+/* Biểu tượng tìm kiếm sẽ ẩn khi hover vào container điều hướng */
+#navigation-container:hover .search-icon {
+  display: none; /* Ẩn biểu tượng tìm kiếm */
+  transition: opacity 0.2s ease-in-out; /* Hiệu ứng chuyển đổi độ mờ trong 0.2 giây */
+}
